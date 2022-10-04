@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+       <!-- CSS only -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+ 
+    <title>Iluminação de um LED</title>
+</head>
+<body>
+   
+   <center><h1>COMPONENTES</h1></center>
+   <center>
+   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://i.pinimg.com/originals/b2/f4/83/b2f48332a4f59e1fe3638942ba8bde15.jpg" class="d-block w-85" alt="https://i.pinimg.com/originals/b2/f4/83/b2f48332a4f59e1fe3638942ba8bde15.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="https://josecintra.com/blog/wp-content/uploads/2018/02/esquema_circuito_simples_led.png" class="d-block w-50" alt="https://josecintra.com/blog/wp-content/uploads/2018/02/esquema_circuito_simples_led.png">
+      </div>
+      <div class="carousel-item">
+        <img src="https://josecintra.com/blog/wp-content/uploads/2018/02/circuito_led_ldr_fr.png" class="d-block w-50" alt="https://josecintra.com/blog/wp-content/uploads/2018/02/circuito_led_ldr_fr.png">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div></center>
+  <center>
+    <h1>5 Cores</h1>
+</center>
+
+<center>
+    <h6>
+        <h4><label for="Tensao">Tensão</label>
+            <br>
+            <select id="faixa1">
+                <option value="9">9V</option>
+                <option value="1">12V</option>
+                <option value="2">15V</option>
+                <option value="3">22V</option>
+                <option value="4">25V</option>
+            </select>
+        </h4>
+    </h6>
+</center>
+<center>
+    <h6>
+        <h4><label for="Led">Cor do led</label>
+            <br>
+            <select id="faixa2">
+                <option value="2.0">Vermelho</option>
+                <option value="2.0">Amarelo</option>
+                <option value="2.0">Laranja</option>
+                <option value="2.5">Verde</option>
+                <option value="3.0">Azul</option>
+                <option value="3.0">Branco</option>
+                <option value="6">Azul</option>
+            </select>
+        </h4>
+    </h6>
+</center>
+
+<center>
+    <h6>
+        <h4>
+            <input type="button" id="somar" value="calculo" onclick="calcularCores()"></input>
+        </h4>
+    </h6>
+</center>
+<br>
+<!--quebra de linha -->
+
+
+
+<h3>
+    <div id="saida"></div>
+
+</h3>
+ 
+   
+    <script src="led.js"></script>
+</body>
+</html>
+ 
+ 
+
